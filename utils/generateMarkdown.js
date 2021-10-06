@@ -35,8 +35,7 @@ function generateMarkdown({
   tests,
   questions,
 }) {
-  return
-  `# ${title} #
+  return `# ${title} #
 ${renderLicenseBadge(license)};
 
 ## Description ##
