@@ -6,7 +6,7 @@ function renderLicenseBadge(license) {
 } else if (license === 'Apache') {
   return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
 } else (license === 'none')
-  return " ";
+  return '';
 };
 
 // TODO: Create a function that returns the license link
@@ -14,13 +14,13 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   if (license === 'MIT') {
       const mit = "MIT";
-      const mitLink = mit.link("https://www.mit.edu/~amini/LICENSE.md");
+      //const mitLink = mit.link("https://www.mit.edu/~amini/LICENSE.md");
       return mit;
   } else if (license === 'Apache') {
       const apache = "Apache";
-      const apacheLink = apache.link("https://www.apache.org/licenses/LICENSE-2.0");
+      //const apacheLink = apache.link("https://www.apache.org/licenses/LICENSE-2.0");
       return apache;
-  } else (err) => console.log(error);
+  } return ''
 };
 
 // TODO: Create a function to generate markdown for README
@@ -52,7 +52,7 @@ ${installation}
 ${usage}
 
 ## License ##
-${renderLicenseLink}
+${renderLicenseLink(license)}
 
 ## Contribute ##
 ${contributing}
